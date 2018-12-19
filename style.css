@@ -15,6 +15,11 @@ p
     margin-left: 0px;
 }
 
+.btn-default
+{
+	border-color: transparent;
+}
+
 .specialities
 {
 	display: inline;
@@ -25,18 +30,64 @@ p
 	color: #ec561b;
 }
 
-.orangeButton
+.price
+{
+  display: inline;
+  font-size: 24px;
+  color: rgb(236, 86, 27);
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.annuity
+{
+	display: inline;
+	padding-left: 3%;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+.discount
+{
+	text-decoration: line-through;
+	position: relative;
+    right: 98px;
+    margin-bottom: 0px !important; /*Not a good habbit but...*/
+
+}
+
+.largeButton
 {
 	float: right;
 	background-color: #ec561b;
 	color: #ffffff;
 }
 
+.smallButton
+{
+	background-color: #ffffff;
+	color: #ec561b;
+	border-color: #ec561b; 
+}
+
+.btn-default:hover
+{
+	background-color: #ffffff;
+	color: #ec561b;
+	border-color: #ec561b !important; 
+}
+
+
 @media screen and (min-width: 640px)
 {
+	.noRightPadding
+	{
+		padding-right: 0px;
+	}
+
 	.paddingBottom5
 	{
-		padding-bottom: 5%;
+		padding-bottom: 3%;
 	}
 
 	.productBoxBottom
@@ -60,21 +111,21 @@ p
 	.seperateProduct
 	{
 		margin-top: 1px;
-		padding: 1%;
+		padding: 2%;
 	}
 
 	.productBoxContainer
 	{
 		overflow: hidden;
-		margin-left: .5%;
-		margin-right: 30%;
+	    margin: 1% 30% 1% .5%;
+
 		
 	}
 
 	.priceBoxDesktop
 	{
 		text-align: right;
-		margin-top: 15px;
+		/*margin-top: 15px;*/
 		margin-bottom: 5px;
 	}
 
@@ -85,9 +136,16 @@ p
 		text-align: left;
 	}
 
-	.orangeButton
+	.largeButton
 	{
 		margin-top: 15px;
+		width: 100%;
+	}
+
+	.smallButton
+	{
+	    margin-top: 18px;
+	    float: right;
 	}
 
 	.logo
