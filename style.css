@@ -8,6 +8,11 @@ p
 	margin: 5px 0px 5px 0px;
 }
 
+.floatRight
+{
+	float: right;
+}
+
 /*To OverWrite Bootstrap*/
 .row
 {
@@ -90,6 +95,11 @@ p
 		padding-bottom: 3%;
 	}
 
+	.fullWidth
+	{
+		width: 100%;
+	}
+
 	.productBoxBottom
 	{
 		background-color: #ffffff;
@@ -139,7 +149,6 @@ p
 	.largeButton
 	{
 		margin-top: 15px;
-		width: 100%;
 	}
 
 	.smallButton
