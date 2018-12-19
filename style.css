@@ -6,6 +6,13 @@ body
 p
 {
 	margin: 5px 0px 5px 0px;
+	font-family: "Myriad Pro";
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-size: 16px;
+  font-family: "Myriad Pro";
 }
 
 .floatRight
@@ -28,6 +35,9 @@ p
 .specialities
 {
 	display: inline;
+	color: rgb(99, 99, 99);
+ 	line-height: 1.75;
+  	font-size: 16px;
 }
 
 .orangeIcon
@@ -127,9 +137,7 @@ p
 	.productBoxContainer
 	{
 		overflow: hidden;
-	    margin: 1% 30% 1% .5%;
-
-		
+	    margin: 2% 30% 2% .5%;
 	}
 
 	.priceBoxDesktop
@@ -151,6 +159,7 @@ p
 		margin-top: 15px;
 	}
 
+
 	.smallButton
 	{
 	    margin-top: 18px;
@@ -159,9 +168,19 @@ p
 
 	.logo
 	{
-		margin-top: 15px;
+		margin-top: 24px;
 		margin-bottom: 5px;
-		max-width: 70%;
 	}
+
+	.specialDiscount, .insuranceTitle
+	{
+		text-align: center;
+	}
+
+	.specialities
+	{
+		padding-left: 3%;
+	}
+
 }
 
