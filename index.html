@@ -4,7 +4,7 @@
 	<head>
 		<title>Hangi Kredi</title>
 		<meta charset="utf-8">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Bootstrap CSS -->
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,34 +15,53 @@
 
 	<body>
 
-		<div class="container-fluid">
-			<!-- Navbar goes here -->
-			<!-- Sub-Nav Here -->
-		</div>
+		
 
 		<!-- First Ad. -->
 		<div class="productBoxContainer">
+			<div class="container-fluid">
+
+				<!-- breadcrumb -->
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">2017</a></li>
+				    <li class="breadcrumb-item"><a href="#">RENAULT (OYAK)</a></li>
+				    <li class="breadcrumb-item"><a href="#">CLIO TOUCHROME</a></li>
+				    <li class="breadcrumb-item"><a href="#">1.2 EDC 120</a></li>
+				  </ol>
+				</nav>
+				<!-- /breadcrumb -->
+
+			</div>
+			
+
 			<!-- Top-Product Box -->
 			<div class="row productBoxTop">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<img class="img-responsive logo" src="images/ErgoLogo.png">
+					<h5 class="hideInDesktop insuranceTitle">Başka Kasko Sigortası</h5>
+					
 				</div>
 				
-				<div class="col-md-5 productTitle">
-					<h5 class="insuranceTitle">Başka Kasko Sigortası</h5>
-					<h4 class="specialDiscount">Mesleğinize özel %10 indirim.</h4>
+				<div class="col-md-3 firstProductTitle">
+					<h5 class="hideInMobil insuranceTitle">Başka Kasko Sigortası</h5>
+					<h4 class="hideInMobil specialDiscount">Mesleğinize özel %10 indirim.</h4>
 				</div>
 							
-				<div class="col-md-4 priceBoxDesktop">
+				<div class="col-md-6 col-xs-6 priceBoxMobil priceBoxDesktop">
 					<p class="discount">660,00 TL</p>
 					<p class="price">600,00 TL</p> <p class="annuity">12 Taksit</p>
 				</div>										
-			</div>			
+			</div>
+
+			<div class="row col-xs-12 specialDiscountMobil hideInDesktop">
+				<h4 class="specialDiscount">Mesleğinize özel %10 indirim.</h4>
+			</div>		
 
 			<!-- Top-Product Box -->
 			<div class="row productBoxBottom seperateProduct">
-				<div class="col-md-4">
-					<div class="paddingBottom5">
+				<div class="col-md-3 hideInMobil">
+					<div class="paddingBottom3">
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">30 Günlük İkame Araç</p>
 					</div>
 
@@ -51,8 +70,8 @@
 					</div>
 				</div>
 				
-				<div class="col-md-4">
-					<div class="paddingBottom5">
+				<div class="col-md-4 leftPad5 hideInMobil">
+					<div class="paddingBottom3">
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Orijinal yedek parça</p>
 					</div>
 
@@ -60,16 +79,50 @@
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Hasarsızlık Koruma Teminatı</p>
 					</div>
 				</div>
-							
-				<div class="col-md-4 noRightPadding">
-					<div class="col-md-4 noRightPadding">
-						<button type="button" class="btn btn-default btn-sm smallButton">
+
+				<!-- For Mobil -->
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">30 Günlük İkame Araç</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Anahtarla aracın çalışması</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Orijinal yedek parça</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Hasarsızlık Koruma Teminatı</p>
+						</div>
+					</div>
+				</div>
+				<!-- /For Mobil -->
+
+				<div class="col-md-5 col-xs-12 noRightPadding noLeftPaddingMobil paddingVertical3Mobil">
+					<div class="col-md-6 col-xs-5 noRightPadding">
+						<button type="button" class="btn btn-default btn-sm smallButton fullWidthMobil">
 					  		<p>Beni Ara</p>
 						</button>
 					</div>
 					
-					<div class="col-md-8 noRightPadding">
-						<button type="button" class="btn btn-default btn-md fullWidth largeButton">
+					<div class="col-md-6 col-xs-7 noRightPadding noLeftPaddingMobil noRightPaddingMobil">
+						<button type="button" class="btn btn-default btn-md fullWidth largeButton fullWidthMobil">
 						  <p>HEMEN SATIN AL</p>
 						</button>
 					</div>
@@ -83,24 +136,26 @@
 		<div class="productBoxContainer">
 			<!-- Top-Product Box -->
 			<div class="row productBoxTop">
-				<div class="col-md-3">
-					<img class="img-responsive logo" src="images/Sompologo.png">
+				<div class="col-md-3 col-xs-6">
+					<img class="img-responsive logo" src="images/SompoLogo.png">
+					<h5 class="hideInDesktop insuranceTitle">Genişletilmiş Kasko</h5>
+					
 				</div>
 				
-				<div class="col-md-5 productTitle">
-					<h5 class="insuranceTitle">Genişletilmiş Kasko</h5>
+				<div class="col-md-3 productTitle">
+					<h5 class="hideInMobil insuranceTitle">Genişletilmiş Kasko</h5>
 				</div>
 							
-				<div class="col-md-4 priceBoxDesktop">
+				<div class="col-md-6 col-xs-6 priceBoxMobil priceBoxDesktop">
 					<p class="discount">660,00 TL</p>
 					<p class="price">600,00 TL</p> <p class="annuity">12 Taksit</p>
 				</div>										
-			</div>			
+			</div>	
 
 			<!-- Top-Product Box -->
 			<div class="row productBoxBottom seperateProduct">
-				<div class="col-md-4">
-					<div class="paddingBottom5">
+				<div class="col-md-3 hideInMobil">
+					<div class="paddingBottom3">
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">30 Günlük İkame Araç</p>
 					</div>
 
@@ -109,8 +164,8 @@
 					</div>
 				</div>
 				
-				<div class="col-md-4">
-					<div class="paddingBottom5">
+				<div class="col-md-4 leftPad5 hideInMobil">
+					<div class="paddingBottom3">
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Orijinal yedek parça</p>
 					</div>
 
@@ -118,10 +173,50 @@
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Hasarsızlık Koruma Teminatı</p>
 					</div>
 				</div>
-							
-				<div class="col-md-4 noRightPadding">
-					<div class="col-md-9 noRightPadding floatRight">
-						<button type="button" class="btn btn-default btn-md fullWidth largeButton">
+
+				<!-- For Mobil -->
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">30 Günlük İkame Araç</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Anahtarla aracın çalışması</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Orijinal yedek parça</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Hasarsızlık Koruma Teminatı</p>
+						</div>
+					</div>
+				</div>
+				<!-- /For Mobil -->
+
+				<div class="col-md-5 col-xs-12 noRightPadding noLeftPaddingMobil paddingVertical3Mobil">
+					<div class="col-md-6 col-xs-5 noRightPadding">
+						<button type="button" class="btn btn-default btn-sm smallButton fullWidthMobil">
+					  		<p>Beni Ara</p>
+						</button>
+					</div>
+					
+					<div class="col-md-6 col-xs-7 noRightPadding noLeftPaddingMobil noRightPaddingMobil">
+						<button type="button" class="btn btn-default btn-md fullWidth largeButton fullWidthMobil">
 						  <p>HEMEN SATIN AL</p>
 						</button>
 					</div>
@@ -135,23 +230,26 @@
 		<div class="productBoxContainer">
 			<!-- Top-Product Box -->
 			<div class="row productBoxTop">
-				<div class="col-md-3">
-					<img class="img-responsive logo" src="images/BaySigortaLogo.png">
+				<div class="col-md-3 col-xs-6">
+					<img class="img-responsive logo" src="images/RaySigortaLogo.png">
+					<h5 class="hideInDesktop insuranceTitle">Kasko Sigortası</h5>
+					
 				</div>
 				
-				<div class="col-md-5 productTitle">
-					<h5 class="insuranceTitle">Genişletilmiş Kasko</h5>
+				<div class="col-md-3 productTitle">
+					<h5 class="hideInMobil insuranceTitle">Kasko Sigortası</h5>
 				</div>
 							
-				<div class="col-md-4 priceBoxDesktop">
+				<div class="col-md-6 col-xs-6 priceBoxMobil priceBoxDesktop">
 					<p class="discount">660,00 TL</p>
 					<p class="price">600,00 TL</p> <p class="annuity">12 Taksit</p>
 				</div>										
-			</div>			
+			</div>
 
+			<!-- Top-Product Box -->
 			<div class="row productBoxBottom seperateProduct">
-				<div class="col-md-4">
-					<div class="paddingBottom5">
+				<div class="col-md-3 hideInMobil">
+					<div class="paddingBottom3">
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">30 Günlük İkame Araç</p>
 					</div>
 
@@ -160,8 +258,8 @@
 					</div>
 				</div>
 				
-				<div class="col-md-4">
-					<div class="paddingBottom5">
+				<div class="col-md-4 leftPad5 hideInMobil">
+					<div class="paddingBottom3">
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Orijinal yedek parça</p>
 					</div>
 
@@ -169,16 +267,56 @@
 						<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Hasarsızlık Koruma Teminatı</p>
 					</div>
 				</div>
-							
-				<div class="col-md-4 noRightPadding">
-					<div class="col-md-9 noRightPadding floatRight">
-						<button type="button" class="btn btn-default btn-md fullWidth largeButton">
+
+				<!-- For Mobil -->
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">30 Günlük İkame Araç</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Anahtarla aracın çalışması</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Orijinal yedek parça</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row hideInDesktop">
+					<div class="col-xs-12 paddingTop1Mobil">
+						<div class="paddingBottom3">
+							<span class="glyphicon glyphicon-ok orangeIcon" aria-hidden="true"></span><p class="specialities">Hasarsızlık Koruma Teminatı</p>
+						</div>
+					</div>
+				</div>
+				<!-- /For Mobil -->
+
+				<div class="col-md-5 col-xs-12 noRightPadding noLeftPaddingMobil paddingVertical3Mobil">
+					<div class="col-md-6 col-xs-5 noRightPadding">
+						<button type="button" class="btn btn-default btn-sm smallButton fullWidthMobil">
+					  		<p>Beni Ara</p>
+						</button>
+					</div>
+					
+					<div class="col-md-6 col-xs-7 noRightPadding noLeftPaddingMobil noRightPaddingMobil">
+						<button type="button" class="btn btn-default btn-md fullWidth largeButton fullWidthMobil">
 						  <p>HEMEN SATIN AL</p>
 						</button>
 					</div>
 					
 				</div>										
-			</div>	
+			</div>		
 		</div>
 			<!-- /Third Ad. -->
 

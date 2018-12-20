@@ -27,6 +27,18 @@ h1, h2, h3, h4, h5, h6
     margin-left: 0px;
 }
 
+.breadcrumb
+{
+	background-color: transparent;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+.breadcrumb>li>a
+{
+	color: #636363;
+}
+
 .btn-default
 {
 	border-color: transparent;
@@ -35,6 +47,7 @@ h1, h2, h3, h4, h5, h6
 .specialities
 {
 	display: inline;
+	padding-left: 3%;
 	color: rgb(99, 99, 99);
  	line-height: 1.75;
   	font-size: 16px;
@@ -56,7 +69,6 @@ h1, h2, h3, h4, h5, h6
 
 .annuity
 {
-	display: inline;
 	padding-left: 3%;
 	font-size: 10px;
 	text-decoration: underline;
@@ -66,7 +78,6 @@ h1, h2, h3, h4, h5, h6
 {
 	text-decoration: line-through;
 	position: relative;
-    right: 98px;
     margin-bottom: 0px !important; /*Not a good habbit but...*/
 
 }
@@ -93,24 +104,7 @@ h1, h2, h3, h4, h5, h6
 }
 
 
-@media screen and (min-width: 640px)
-{
-	.noRightPadding
-	{
-		padding-right: 0px;
-	}
-
-	.paddingBottom5
-	{
-		padding-bottom: 3%;
-	}
-
-	.fullWidth
-	{
-		width: 100%;
-	}
-
-	.productBoxBottom
+.productBoxBottom
 	{
 		background-color: #ffffff;
 		border: solid;
@@ -128,6 +122,39 @@ h1, h2, h3, h4, h5, h6
 		border-color: transparent;
 	}
 
+/*For desktop only*/
+@media only screen and (min-width: 741px)
+{
+	.noRightPadding
+	{
+		padding-right: 0px;
+	}
+
+	.leftPad5
+	{
+		padding-left: 5%;
+	}
+
+	.paddingBottom3
+	{
+		padding-bottom: 3%;
+	}
+
+	.fullWidth
+	{
+		width: 100%;
+	}
+
+	.annuity
+	{
+		display: inline;
+	}
+
+	.discount
+	{
+		right: 98px;
+	}
+
 	.seperateProduct
 	{
 		margin-top: 1px;
@@ -143,14 +170,19 @@ h1, h2, h3, h4, h5, h6
 	.priceBoxDesktop
 	{
 		text-align: right;
-		/*margin-top: 15px;*/
+		margin-top: 15px;
 		margin-bottom: 5px;
 	}
 
 	.productTitle
 	{
-		margin-top: 15px;
-		margin-bottom: 5px;
+		margin-top: 30px;
+		text-align: left;
+	}
+
+	.firstProductTitle
+	{
+		margin-top: 14px;
 		text-align: left;
 	}
 
@@ -168,19 +200,113 @@ h1, h2, h3, h4, h5, h6
 
 	.logo
 	{
-		margin-top: 24px;
-		margin-bottom: 5px;
+		padding-top: 24px;
+		padding-bottom: 5px;
 	}
 
+/*	.ErgoLogo
+	{
+		padding-top: 30px;
+		padding-bottom: 5px;
+	}
+*/
 	.specialDiscount, .insuranceTitle
 	{
 		text-align: center;
 	}
 
-	.specialities
+	.insuranceTitle, .specialDiscount
 	{
-		padding-left: 3%;
+		
+	}
+
+	.hideInDesktop
+	{
+		display: none;
 	}
 
 }
+
+@media only screen and (max-width: 740px)
+{
+	.productBoxContainer
+	{
+		overflow: hidden;
+	    margin: 5% 2% 3% 2%;
+	}
+
+	.paddingTop1Mobil
+	{
+		padding-top: 1%;
+	}
+
+	.paddingVertical3Mobil
+	{
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+	.noLeftPaddingMobil
+	{
+		padding-left: 0px;
+	}
+
+	.noRightPaddingMobil
+	{
+		padding-right: 0px;
+	}
+
+	.hideInMobil
+	{
+		display: none;
+	}
+
+	.insuranceTitle
+	{
+		margin-top: 0px;
+	}
+
+	.specialDiscount, .insuranceTitle
+	{
+    	text-align: left;
+    	white-space: nowrap;
+	}
+
+	.priceBoxMobil
+	{
+		text-align: right;
+	}
+
+	.specialDiscountMobil
+	{
+		background-color: #f8f8f8;
+	}
+
+	.fullWidthMobil
+	{
+		width: 100%;
+	}
+
+	.logo
+	{
+		padding-top: 24px;
+		padding-bottom: 5px;
+	}
+
+	.breadcrumb>li+li:before
+	{
+		padding: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
