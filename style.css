@@ -11,8 +11,15 @@ p
 
 h1, h2, h3, h4, h5, h6
 {
-  font-size: 16px;
+/*  font-size: 16px;*/
   font-family: "Myriad Pro";
+}
+
+.offersTitle
+{
+	padding-left: 2%;
+	white-space: nowrap;
+	color: white;
 }
 
 .floatRight
@@ -105,22 +112,30 @@ h1, h2, h3, h4, h5, h6
 
 
 .productBoxBottom
-	{
-		background-color: #ffffff;
-		border: solid;
-		border-width: 1px;
-		border-radius: 0px 0px 8px 8px;
-		border-color: transparent;
-	}
+{
+	background-color: #ffffff;
+	border: solid;
+	border-width: 1px;
+	border-radius: 0px 0px 8px 8px;
+	border-color: transparent;
+}
 
-	.productBoxTop
-	{
-		background-color: #ffffff;
-		border: solid;
-		border-width: 1px;
-		border-radius: 8px 8px 0px 0px;
-		border-color: transparent;
-	}
+.productBoxTop
+{
+	background-color: #ffffff;
+	border: solid;
+	border-width: 1px;
+	border-radius: 8px 8px 0px 0px;
+	border-color: transparent;
+}
+
+.purpleBg
+{
+	min-width: 100%;
+	height: 80px;
+	background-image: url("images/listeleme.png");
+	background-repeat: repeat-x;
+}
 
 /*For desktop only*/
 @media only screen and (min-width: 741px)
@@ -212,12 +227,8 @@ h1, h2, h3, h4, h5, h6
 */
 	.specialDiscount, .insuranceTitle
 	{
+		white-space: nowrap;
 		text-align: center;
-	}
-
-	.insuranceTitle, .specialDiscount
-	{
-		
 	}
 
 	.hideInDesktop
@@ -269,7 +280,6 @@ h1, h2, h3, h4, h5, h6
 	.specialDiscount, .insuranceTitle
 	{
     	text-align: left;
-    	white-space: nowrap;
 	}
 
 	.priceBoxMobil
@@ -296,6 +306,12 @@ h1, h2, h3, h4, h5, h6
 	.breadcrumb>li+li:before
 	{
 		padding: 0px;
+	}
+
+	.offersTitle
+	{
+		font-size: 25px;
+		padding-top: 2%;
 	}
 }
 
